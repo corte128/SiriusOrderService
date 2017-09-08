@@ -1,0 +1,22 @@
+!SESSION 2017-09-08 10:54:34.644 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.7.0 IBM J9 2.6 Windows 7 x86-32 20120322_106209 (JIT enabled, AOT enabled)
+J9VM - R26_Java726_SR1_20120322_1720_B106209
+JIT  - r11_20120322_22976
+GC   - R26_Java726_SR1_20120322_1720_B106209
+J9CL - 20120322_106209
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.ibm.rational.rad.product.v85.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ibm.rational.rad.product.v85.ide
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-09-08 10:54:35.540
+!MESSAGE An internal error occurred during: "Acquiring feedback configuration file".
+!STACK 0
+java.lang.NullPointerException
+	at com.ibm.support.feedback.core.internal.servers.ServerAdapter.isIBMInternalUser(Unknown Source)
+	at com.ibm.support.feedback.core.internal.servers.FTPAdapter.isValid(Unknown Source)
+	at com.ibm.support.feedback.core.internal.config.FeedbackConfig.initialize(Unknown Source)
+	at com.ibm.support.feedback.core.internal.config.FeedbackConfigHandler.getRemoteConfigurationFile(Unknown Source)
+	at com.ibm.support.feedback.core.internal.config.FeedbackConfigHandler.getConfigFile(Unknown Source)
+	at com.ibm.support.feedback.core.internal.config.FeedbackConfigHandler$1.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Unknown Source)
